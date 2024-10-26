@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adra Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#" class="links" id="Category">Category</a>
+                <a href="#" class="links" id="Price">Price</a>
+                <a href="#" class="links" id="About">About</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="auth-buttons">
+                <button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bring your<br> <span class="highlight">goals into Career</span></h1>
+            <p>Adra offers online courses and programs with AI to support every career moment</p>
+            <button class="explore-btn">Explore</button>
+        </div>
+    </section>
+
+    <section class="course-section">
+        <div class="course-container">
+            <div class="course-box" id="first"><img src="oxford logo.jpg" alt="oxford" id="first"></div>
+            <div class="course-box" id="second"><img src="MIT-Massachusetts-Institute-of-Technology-Logo.png" alt=""></div>
+            <div class="course-box" id="third"><img src="university of california.jpeg" alt=""></div>
+            <div class="course-box" id="fourth"><img src="yale-university-logo-png-2.png" alt=""></div>
+            <div class="course-box" id="fifth"><img src="Harvard_University_logo.svg" alt=""></div>
+            <a href="#" class="arrow-link">→</a>
+        </div>
+        <p class="course-text">Take online AI courses from 69+ world-class universities and companies</p>
+    </section>
+
+    <section class="popular-topics-section">
+        <h2>Popular topic</h2>
+        <div class="topics-container">
+            <div class="topic-box">Artificial Intelligence <img src="AI.jpg" alt=""> </div>
+            <div class="topic-box">Leadership <img src="leadership.png" alt=""></div>
+            <div class="topic-box">Supply Chain <img src="supply chain.png" alt=""></div>
+            <div class="topic-box">Programming <img src="computer programming.png" alt=""> </div>
+            <div class="topic-box">UI/UX <img src="ui ux.png" alt=""></div>
+            <div class="topic-box">Python <img src="python.svg" alt=""></div>
+            <div class="topic-box">Machine Learningc <img src="machine learning.png" alt=""></div>
+            <div class="topic-box">Computer Science <img src="computer science.png" alt=""></div>
+            <div class="topic-box">Writing <img src="writing.png" alt=""></div>
+            <div class="topic-box">Statistics <img src="statistics.jpg" alt=""></div>
+        </div>
+    </section>
+
+      <!-- Circle Button with Rotating Text -->
+    <div class="circle-container">
+        <div class="rotating-text">Any Query?</div>
+        <div id="circle-btn" class="circle-button">+</div>
+    </div>
+
+     <!-- Popup Modal -->
+     <div id="popup" class="popup-overlay">
+         <div class="popup-content">
+             <span id="close-btn" class="close-btn">&times;</span>
+             <h2>Popup Title</h2>
+             <p>This is your popup content!</p>
+         </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
