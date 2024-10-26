@@ -334,3 +334,8 @@ img {
     cursor: pointer;
     z-index: 2; /* Ensure the buttons stay above the cards */
 }
+
+.About img {
+    position: absolute;
+    width: 50px;
+}
