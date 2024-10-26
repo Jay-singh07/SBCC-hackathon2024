@@ -164,6 +164,8 @@ body {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
+    color: #234fff;
+    font-weight: 500;
 }
 
 .topics-container {
@@ -264,16 +266,6 @@ body {
     color: #555;
 }
 
-/* Rotate Animation */
-@keyframes rotateText {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
 img {
  width: 120px;
  display: flex;
@@ -282,4 +274,63 @@ img {
  margin-top: 10px;
  margin-left: 5px;
 }
+.review-section {
+    background-color: #f1f3ff;
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.review-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #234fff;
+    font-weight: 500;
+}
+
+.review-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; /* Set the max width to center the section */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflow to show only one card at a time */
+}
+
+.review-cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Take full width to align properly */
+}
+
+.review-card {
+    min-width: 90%; /* Less than 100% to allow some gap between cards */
+    margin: 0 5%; /* Create equal gap between cards */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Add drop shadow effect */
+    text-align: left;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-card h4 {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+.nav-btn {
+    background-color: #234fff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2; /* Ensure the buttons stay above the cards */
+}
