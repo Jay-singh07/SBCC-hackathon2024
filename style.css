@@ -184,7 +184,15 @@ body {
     text-align: center;
     font-weight: 500;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
+
+.topic-box:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
 .circle-container {
     position: fixed;
     bottom: 20px;
@@ -194,6 +202,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /* Circle Button */
