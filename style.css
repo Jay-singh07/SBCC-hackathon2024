@@ -251,7 +251,10 @@ img {
  padding-bottom: 20px;
  margin-top: 10px;
  margin-left: 5px;
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
 }
+
 .review-section {
     background-color: #f1f3ff;
     padding: 50px 20px;
@@ -316,4 +319,133 @@ img {
 .About img {
     position: absolute;
     width: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .course-box {
+        width: 120px; /* Adjust course box width */
+    }
+
+    .course-container {
+        flex-direction: column; /* Stack courses vertically */
+        align-items: center;
+    }
+
+    .review-card {
+        min-width: 100%; /* Full width for review cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center; /* Center align on mobile */
+        text-align: center;
+    }
+
+    .course-container {
+        flex-direction: column; /* Stack course boxes */
+    }
+
+    .topics-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* More responsive topics */
+    }
+
+    .circle-container {
+        bottom: 10px; /* Position circle button lower */
+        right: 10px;
+    }
+
+    .circle-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px; /* Smaller button on mobile */
+    }
+
+    .review-slider {
+        flex-direction: column; /* Stack review slider buttons */
+    }
+
+    .review-card {
+        min-width: 90%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Smaller text for mobile */
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .hero-text h1 {
+        font-size: 28px; /* Smaller title */
+    }
+
+    .hero-text p {
+        font-size: 12px; /* Smaller paragraph */
+    }
+}
+
+.navbar {
+    position: relative; /* Make sure the navbar is positioned correctly */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.nav-links {
+    display: flex; /* Flexbox layout for links */
+    gap: 20px; /* Space between links */
+}
+
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    font-size: 24px; /* Size of the toggle icon */
+    background: none; /* Remove default button styles */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        position: absolute; /* Position them absolutely */
+        top: 60px; /* Adjust based on navbar height */
+        left: 0; /* Align to the left */
+        background-color: #e6e6fa; /* Background color */
+    }
+
+    .navbar-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
 }
